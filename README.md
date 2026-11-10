@@ -69,26 +69,28 @@
 ### 1. Клонирование репозитория
 
 ```bash
-git clone https://github.com/your-username/coursework-5.git
-cd coursework-5
+git clone https://github.com/AntonSmolyaninov/habit-management-with-Telegram-bot-integration
+.git
+cd habit-management-with-Telegram-bot-integration
+
 2. Настройка переменных окружения
 bash
 cp .env.example .env
 Отредактируйте .env файл, указав свои значения:
 
 env
-SECRET_KEY=django-insecure-your-secret-key-here
-DEBUG=False
-ALLOWED_HOSTS=localhost,127.0.0.1,your-server-ip
+SECRET_KEY=
+DEBUG=
+ALLOWED_HOSTS=
 
-DB_NAME=coursework5_db
-DB_USER=postgres
-DB_PASSWORD=your-strong-password
-DB_HOST=db
-DB_PORT=5432
+DB_NAME=
+DB_USER=
+DB_PASSWORD=
+DB_HOST=
+DB_PORT=
 
-REDIS_HOST=redis
-REDIS_PORT=6379
+REDIS_HOST=
+REDIS_PORT=
 
 TELEGRAM_BOT_TOKEN=your_telegram_bot_token
 3. Запуск через Docker Compose (рекомендуется)
@@ -218,8 +220,8 @@ chmod 600 ~/.ssh/authorized_keys
 Ручной деплой
 bash
 # На сервере
-git clone https://github.com/your-username/coursework-5.git
-cd coursework-5
+git clone https://github.com/AntonSmolyaninov/habit-management-with-Telegram-bot-integration.git
+cd habit-management-with-Telegram-bot-integration
 cp .env.example .env
 # Отредактируйте .env
 docker compose up -d --build
